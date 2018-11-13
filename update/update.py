@@ -36,7 +36,7 @@ def update_user_guess(model):
     if not found:
         model['fails'] += 1
     else:
-        # update correct guesses 
+        # update correct guesses  
         correct_guesses = list(model['correct_guesses'])
         for i in found:
             correct_guesses[i] = model['current_guess'].upper()
